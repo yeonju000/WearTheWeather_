@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main_weather">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/light_logo" />
+
+    <ImageView
+        android:id="@+id/main_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
+        android:layout_marginBottom="61dp"
+        android:contentDescription="@null"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/main_1"
+        tools:ignore="ImageContrastCheck" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/main_weather_1"
+                android:layout_width="300dp"
+                android:layout_height="656dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_weather_1"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/maxTempView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="335dp"
+                android:textColor="@color/text_main_weather"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/air"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/minTempView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="360dp"
+                android:textColor="@color/text_main_weather"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                android:fontFamily="@font/air"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/feelsLikeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="385dp"
+                android:textColor="@color/text_main_weather"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                android:fontFamily="@font/air"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1" />
+
+            <ImageView
+                android:id="@+id/main_weather_water"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="550dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/main_weather_water"
+                app:layout_constraintEnd_toEndOf="@id/main_weather_button1"
+                app:layout_constraintHorizontal_bias="0.171"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/humidityView"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/surround"
+                android:textColor="@color/text_main_weather"
+                android:textSize="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/main_weather_1"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1" />
+
+            <ImageView
+                android:id="@+id/main_weather_rain"
+                android:layout_width="33dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="552dp"
+                android:layout_marginLeft="190dp"
+                android:background="@drawable/main_weather_rain"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintHorizontal_bias="0.171"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/rainfallView"
+                android:layout_width="96dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="1dp"
+                android:textSize="13dp"
+                android:fontFamily="@font/surround"
+                android:textColor="@color/text_main_weather"
+                app:layout_constraintBottom_toBottomOf="@+id/main_weather_1"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintHorizontal_bias="0.877"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1" />
+
+            <ImageButton
+                android:id="@+id/main_weather_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="456dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_weather_button1"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/cityView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text=""
+                android:textColor="@color/text_main_weather"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/surround"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                tools:ignore="SpUsage" />
+
+
+            <ImageView
+                android:id="@+id/main_weather_box"
+                android:layout_width="210dp"
+                android:layout_height="10dp"
+                android:layout_marginTop="310dp"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1"
+                android:background="@drawable/main_weather_box"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/weatherIconView"
+                android:layout_width="157dp"
+                android:layout_height="149dp"
+                android:layout_marginTop="80dp"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:id="@+id/tempView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="240dp"
+                android:text=""
+                android:textColor="@color/text_main_weather"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/surround"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/weatherView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="280dp"
+                android:text=""
+                android:textSize="16dp"
+                android:fontFamily="@font/surround"
+                android:textColor="@color/text_main_weather"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="372dp"
+                app:layout_constraintEnd_toEndOf="@+id/main_weather_1"
+                app:layout_constraintHorizontal_bias="0.94"
+                app:layout_constraintStart_toStartOf="@+id/main_weather_1"
+                app:layout_constraintTop_toTopOf="@+id/main_weather_1"
+                app:srcCompat="@android:drawable/stat_notify_sync_noanim"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/common_menubar"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button1_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

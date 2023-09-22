@@ -1,0 +1,279 @@
+[33mcommit ce21826184a11441ab0ae69156a1d02f6b4711e9[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: dain <kangdain1476@naver.com>
+Date:   Fri Aug 18 19:32:00 2023 +0900
+
+    코디 한번만 보여줌;;;
+
+[33mcommit 606d8f15604f55fd6d0173398fc88e7e352f081b[m
+Merge: 2b5e863 da86d38
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 18:25:54 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 2b5e86346d77e74c3596797cd511f6eedffcea68[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 18:25:42 2023 +0900
+
+    키워드 완
+
+[33mcommit da86d388501fe9390f0bc153934ef95b3f8a9857[m
+Merge: a939cde eeed29f
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 18:10:23 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit a939cdee451202d78fa9e89238300e5b5aa0c281[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 18:10:12 2023 +0900
+
+    닉네임 관련 액티비티 삭제
+
+[33mcommit eeed29fdac4237edd9f391c7a60bc4030b07b4d0[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 18:09:51 2023 +0900
+
+    온도 완
+
+[33mcommit aab9cbc6d5ab79121a0b0631524961113949c29b[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 18:08:20 2023 +0900
+
+    온도 완
+
+[33mcommit ba49ef830c4faf18521c5d86ea4ed1bdb89ee6c0[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 16:31:42 2023 +0900
+
+    아우터 변경완
+
+[33mcommit 05a9ad34aff8f8084ec774d1bb30f9dd7706d7dd[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 16:18:31 2023 +0900
+
+    아우터 변경완
+
+[33mcommit f70628f1e2bad82c8485cb0000b7aa6db19b478c[m
+Author: dain <kangdain1476@naver.com>
+Date:   Fri Aug 18 15:42:21 2023 +0900
+
+    코디 구현
+
+[33mcommit 0ae8c37533379999c35e09c4b36008b22e684616[m
+Merge: 2733d8d ee26010
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 12:23:06 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 2733d8d6330f2b34e9047a4fb319f91e7c944461[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 12:22:52 2023 +0900
+
+    저장하기 버튼 > 날짜,온도,키워드,시크바
+
+[33mcommit ee26010831b3477ed1e5ac8417fd51591a10deec[m
+Author: jooon <98799034+SeongJoonhee@users.noreply.github.com>
+Date:   Fri Aug 18 12:17:41 2023 +0900
+
+    calender daily 관련 주석
+
+[33mcommit 15b43b6ecd28e06d4ee6f5310fcca74ec2a7e7b0[m
+Author: dain <kangdain1476@naver.com>
+Date:   Fri Aug 18 09:31:23 2023 +0900
+
+    시크바 수정
+
+[33mcommit 51a46f60bf5afd4e98a5c6ab1afb8e14a88a507f[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 09:12:38 2023 +0900
+
+    date:
+    캘린더 -> 캘린더 날짜 ok
+    저장하기 -> 캘린더 날짜 ok
+
+[33mcommit 9cc0ab694100ab5bcb6ddc080bd731ec8a112e75[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 09:08:11 2023 +0900
+
+    date:
+    캘린더 -> 캘린더 날짜 ok
+    저장하기 -> 캘린더 날짜 nope
+
+[33mcommit 3c7c5d72d976cb1cd8b9af3f21aaa527a1d02c17[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Fri Aug 18 08:39:45 2023 +0900
+
+    푸쉬알림 수정함
+
+[33mcommit 43cc6189487845a4bb72c9b38ef3a4fa9ec93d4b[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 04:20:45 2023 +0900
+
+    주석 수정
+
+[33mcommit 8e57bd6eeb4ff8f072ba5caf0297e0e68e1b6a19[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 03:50:02 2023 +0900
+
+    알림 멘트 수정
+
+[33mcommit cf355ef0426f2ac858807087b11dcaed38be5826[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 03:29:39 2023 +0900
+
+    enter_email 드로어블 변경!
+    아이디 -> 이메일
+
+[33mcommit 8714cb6f035a3350c10cd47de5705a64ec4b55a3[m
+Merge: 6b864c4 affd97a
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 03:16:15 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 6b864c4a5c6f7ea75c54c672c7e1532d2f5af3a8[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 03:16:05 2023 +0900
+
+    테마변경 toast메시지 여러번 뜨는 에러 해결
+
+[33mcommit affd97a74e114003fa3a820a4ccd6544f602e1b0[m
+Author: dain <kangdain1476@naver.com>
+Date:   Fri Aug 18 02:45:44 2023 +0900
+
+    키워드 길이 수정
+
+[33mcommit 17d06d13a8f5d4f648ef8b550ada9ed3f04c9440[m
+Author: dain <kangdain1476@naver.com>
+Date:   Fri Aug 18 02:22:22 2023 +0900
+
+    검색결과 클릭시 데일리캘린더 이동
+
+[33mcommit d525a91326d923d16cbe317a0eb8de948bf0e689[m
+Merge: ce8bc68 6ded4ac
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 01:15:26 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit ce8bc68d2c2b9b7314f4ea9a69c865590c20072c[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Fri Aug 18 01:15:16 2023 +0900
+
+    setting_password 구현
+
+[33mcommit 6ded4ac05ae92c938a913edbbf6c1af5305c7b27[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 22:59:20 2023 +0900
+
+    푸쉬알림 수정함
+
+[33mcommit 44af249110c38fd375cd03374283a2ef4938fa1c[m
+Merge: 500b857 41e2f84
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 22:25:40 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 500b85741d974d090764ad9c919cea372b628d66[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 22:25:25 2023 +0900
+
+    이메일 보이기
+
+[33mcommit 41e2f8426399d94189ae56f27096d2f0018d0c07[m
+Author: dain <kangdain1476@naver.com>
+Date:   Thu Aug 17 21:48:17 2023 +0900
+
+    세팅 패스워드 스크롤뷰
+
+[33mcommit 30940fcb8013b47b886eacf00e75445019cb7c78[m
+Author: dain <kangdain1476@naver.com>
+Date:   Thu Aug 17 20:59:11 2023 +0900
+
+    강수량 정보 글씨 수정
+
+[33mcommit 3d4a0e65a1b71feddddd2f59d4aaa0f186095197[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 20:43:10 2023 +0900
+
+    <파일 정리>
+
+[33mcommit 5500c7ea0e3269d1aea057fd5e73294cd5e32c12[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 20:42:28 2023 +0900
+
+    <파일 정리>
+
+[33mcommit 6d1646ac5e487ea84160d9fef3dca7b0bccec497[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 20:40:56 2023 +0900
+
+    <파일 정리>
+
+[33mcommit 5b562de0b575822e9d24678fd3d45a485e9671e2[m
+Author: 송혜음 <parzen1@naver.com>
+Date:   Thu Aug 17 20:40:15 2023 +0900
+
+    <파일 정리>
+
+[33mcommit 59f18894885c84a33c2a9ca13cd8ee366e858bf1[m
+Author: jooon <98799034+SeongJoonhee@users.noreply.github.com>
+Date:   Thu Aug 17 17:45:14 2023 +0900
+
+    user_input fashion 값 송수신 3
+
+[33mcommit 1280567e5b5e1863ef7562255070dbcfca8d4a7e[m
+Author: jooon <98799034+SeongJoonhee@users.noreply.github.com>
+Date:   Thu Aug 17 17:17:22 2023 +0900
+
+    데일리 캘린더 에러 주석처리
+
+[33mcommit cc41b7e8cd57a411b14317b091873220a295bd11[m
+Author: dain <kangdain1476@naver.com>
+Date:   Thu Aug 17 16:43:45 2023 +0900
+
+    메인 날씨 디자인
+
+[33mcommit 6a6aedf6e2ed4f29906784980711ffa01a00d6a7[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Thu Aug 17 16:19:35 2023 +0900
+
+    이메일 형식으로만 받기, 비밀번호 -> 영문숫자포함 8-20자 이내로 받기
+
+[33mcommit 10f2e7cb01bd5dc27ebd684b9ece9d6f02d18dda[m
+Merge: 821a94d b05cc4a
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Thu Aug 17 15:41:23 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 821a94de148c2dbcce34d393f9430a1e6a688fbc[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Thu Aug 17 15:41:11 2023 +0900
+
+    find_password.xml 변경
+
+[33mcommit b05cc4afb746e39d75bd2e5b5de07fc8cccc551c[m
+Author: jooon <98799034+SeongJoonhee@users.noreply.github.com>
+Date:   Thu Aug 17 15:39:13 2023 +0900
+
+    쉬는시간 임시저장  user input temp 데이터 수신 2
+
+[33mcommit 1fd3a05ff70386a0c9d8661869598cf42988dd42[m
+Merge: 3f3b146 514474d
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Thu Aug 17 15:37:56 2023 +0900
+
+    Merge remote-tracking branch 'origin/master'
+
+[33mcommit 3f3b14609b90f51aa590b62f987a9f5c7f870d12[m
+Author: yeonju000 <20221146@sungshin.ac.kr>
+Date:   Thu Aug 17 15:37:46 2023 +0900
+
+    비밀번호 찾기
+
+[33mcommit 514474d93e0ff23d5ebba928b501b4eba0de6308[m
+Author: dain <kangdain1476@naver.c

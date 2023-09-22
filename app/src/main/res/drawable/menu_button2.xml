@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <group>
+        <path
+            android:fillColor="#FFFFFFFF"
+            android:pathData="M100 16.67C54 16.67 16.67 54 16.67 100S54 183.33 100 183.33 183.33 146 183.33 100 146 16.67 100 16.67ZM100 50c16.08 0 29.17 13.08 29.17 29.17 0 16.08-13.09 29.16-29.17 29.16-16.08 0-29.17-13.08-29.17-29.16C70.83 63.08 83.92 50 100 50Zm0 116.67c-16.92 0-36.92-6.84-51.17-24C62.92 131.67 80.67 125 100 125c19.33 0 37.08 6.67 51.17 17.67-14.25 17.16-34.25 24-51.17 24Z"/>
+    </group>
+</vector>

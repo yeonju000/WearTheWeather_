@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search_user">
+
+    <ImageButton
+        android:id="@+id/search_user_backbutton"
+        android:layout_width="33dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_backbutton"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="360dp"
+        android:layout_height="550dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ExtraText">
+
+            //search_temperature
+
+            <TextView
+                android:id="@+id/search_month_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/surround"
+                android:text="원하는 온도를\n입력해주세요."
+                android:textAlignment="center"
+                android:textColor="@color/text_75A3E9_FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/search_temperature_2"
+                android:layout_width="240dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="70dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_month_1"
+                app:srcCompat="@drawable/search_temperature_2"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <EditText
+                android:id="@+id/editTextNumberSigned"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="153dp"
+                android:background="@null"
+                android:digits="0123456789-"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/search_temperature_2"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/search_user_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="395dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_month_1"
+                app:srcCompat="@drawable/user_input_anim"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            //search_month
+
+            <TextView
+                android:id="@+id/search_month_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="650dp"
+                android:fontFamily="@font/surround"
+                android:text="원하는 계절을\n선택해주세요."
+                android:textAlignment="center"
+                android:textColor="@color/text_75A3E9_FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_month_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/search_temperature_button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="750dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/search_temperature_button"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/search_month_2"
+                android:layout_width="240dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="850dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/search_month_2"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/search_month_3"
+                android:layout_width="205dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="1140dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/search_month_3"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/search_month_button13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1180dp"
+                android:background="@android:color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/search_month_button13"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="850dp"
+                android:layout_marginEnd="80dp"
+                android:background="@android:color/transparent"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button2"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="850dp"
+                android:background="@android:color/transparent"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button3"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="850dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button4"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="80dp"
+                android:background="@android:color/transparent"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/button5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button1"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button5"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button2"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button6"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/button5"
+                app:layout_constraintTop_toBottomOf="@+id/button3"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button7"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button4"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button8"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button9"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button8"
+                app:layout_constraintTop_toBottomOf="@+id/button6"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button10"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:text="10"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button7"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button11"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:background="@android:color/transparent"
+                android:text="11"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button8"
+                tools:ignore="HardcodedText,TextContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/button12"
+                android:layout_width="80dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="60dp"
+                android:background="@android:color/transparent"
+                android:text="12"
+                android:textColor="#FFFFFF"
+                android:textSize="27sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button9"
+                tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/common_menubar"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="360dp"
+        android:layout_height="800dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_tip"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="360dp"
+        android:layout_height="800dp"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_tip"
+        tools:ignore="SpeakableTextPresentCheck"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button4_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

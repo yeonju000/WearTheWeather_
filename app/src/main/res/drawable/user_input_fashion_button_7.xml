@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="57dp"
+    android:height="25dp"
+    android:viewportWidth="57"
+    android:viewportHeight="25">
+    <path
+        android:fillColor="#FFBED2EC"
+        android:pathData="M0 5c0-2.76 2.24-5 5-5h47c2.76 0 5 2.24 5 5v20H0V5Z"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M20.04 16.05h0.62c1.74 0 2.35-0.01 3.05-0.18l0.13 0.97c-0.74 0.19-1.37 0.2-3.18 0.2h-0.62v-0.99Zm-0.01-2.93h3.1v2.39h-1.8v1.23h-1.3V14.6h1.82v-0.49h-1.82v-0.99Zm3.48 0h2.98v3.95h-1.31v-2.91H23.5v-1.04Zm1.65-5.24h1.33v4.84h-1.33V7.88Zm0.79 1.83h1.76v1.08h-1.76V9.71Zm-6.48-1.36h4.4v3.94h-4.4V8.35Zm3.1 1.04h-1.8v1.86h1.8V9.39Zm10.02-1.34c2.04 0 3.35 0.69 3.35 1.81s-1.31 1.8-3.35 1.8-3.35-0.68-3.35-1.8 1.3-1.81 3.35-1.81Zm0 1.03c-1.27 0-1.98 0.25-1.98 0.78 0 0.52 0.7 0.78 1.98 0.78 1.26 0 1.98-0.26 1.98-0.78 0-0.53-0.72-0.78-1.98-0.78Zm-3.22 4.8h6.4v3.16h-6.4v-3.16Zm5.1 1.05h-3.8v1.06h3.8v-1.06Zm-6.07-2.74h8.37v1.05H28.4v-1.05Z"/>
+</vector>

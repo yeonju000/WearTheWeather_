@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarmMainActivity">
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/surround"
+        android:text="푸쉬 알림 설정"
+        android:textColor="#75A3E9"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <ImageView
+        android:id="@+id/alarm_main_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="166dp"
+        android:layout_marginTop="300dp"
+        app:srcCompat="@drawable/alarm_main_e"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/time_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="시간 지정"
+        android:background="@drawable/alarm_main_btn"
+        android:textColor="@color/SKY"></androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/time_cancel_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/time_btn"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="알림 취소"
+        android:textColor="@color/SKY"
+        android:background="@drawable/alarm_main_btn"
+        android:textColorLink="#ff6750a4"></androidx.appcompat.widget.AppCompatButton>
+
+    <ImageButton
+        android:id="@+id/alarm_main_backbutton"
+        android:layout_width="33dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.003"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_backbutton"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/alarm_main_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarm_main_bar"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+</RelativeLayout>

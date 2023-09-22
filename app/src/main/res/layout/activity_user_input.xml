@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user_input">
+
+    <ImageButton
+        android:id="@+id/user_input_temperature_backbutton8"
+        android:layout_width="33dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_backbutton"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="360dp"
+        android:layout_height="600dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ExtraText">
+            //temp
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="104dp"
+                android:fontFamily="@font/surround"
+                android:text="기록하고자 하는\n온도를 입력해주세요"
+                android:textAlignment="center"
+                android:textColor="@color/text_75A3E9_FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,TextContrastCheck"
+                tools:visibility="visible" />
+
+            //slider
+
+            <TextView
+                android:id="@+id/maxTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="236dp"
+                android:fontFamily="@font/surround"
+                android:text="오늘의 최고 온도: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/minTempTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="288dp"
+                android:fontFamily="@font/surround"
+                android:text="오늘의 최저 온도: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="368dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                app:srcCompat="@drawable/user_input_anim"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:fontFamily="@font/surround"
+                android:text="클릭한 온도에서의\n자신의 느낌을\n슬라이더로 조절해주세요"
+                android:textAlignment="center"
+                android:textColor="@color/text_75A3E9_FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10"
+                tools:ignore="HardcodedText" />
+
+            <SeekBar
+                android:id="@+id/seekBar2"
+                android:layout_width="276dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="190dp"
+                android:background="@drawable/user_input_slider_3"
+                android:progressDrawable="@null"
+                android:thumb="@drawable/user_input_slider_4"
+                android:thumbTint="#FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+            //keyword
+
+            <android.widget.Button
+                android:id="@+id/user_input_suggestion_button1"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/user_input_suggestion_key_button1"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.101"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_suggestion_button1"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/user_input_suggestion_button2"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/user_input_suggestion_key_button2"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.369"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_suggestion_button2"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/user_input_suggestion_button3"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/user_input_suggestion_key_button3"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.657"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_suggestion_button3"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            <android.widget.Button
+                android:id="@+id/user_input_suggestion_button4"
+                android:layout_width="65dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/user_input_suggestion_key_button4"
+                android:importantForAccessibility="no"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.938"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_suggestion_button4"
+                tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/user_input_keyword_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="234dp"
+                android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_button_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/user_input_keyword_button_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="234dp"
+                android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_button_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/user_input_keyword_button_1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="234dp"
+                android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_button_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/user_input_keyword_button_1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="234dp"
+                android:background="@android:color/transparent"
+                android:importantForAccessibility="no"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_button_1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/user_input_keyword_inputimageView2"
+                android:layout_width="300dp"
+                android:layout_height="42.05dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="275dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_input"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/user_input_keyword_input1_bg"
+                android:layout_width="300dp"
+                android:layout_height="42.05dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="336dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_input"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <ImageView
+                android:id="@+id/user_input_keyword_input2_bg"
+                android:layout_width="300dp"
+                android:layout_height="42.05dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="397dp"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:srcCompat="@drawable/user_input_keyword_input"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="500dp"
+                android:fontFamily="@font/surround"
+                android:text="클릭한 온도에서의\n자신의 느낌을\n키워드로 작성해주세요"
+                android:textAlignment="center"
+                android:textColor="@color/text_75A3E9_FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/user_input_keyword_input1"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="275dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="키워드 입력"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textColorHint="#C1C1C1"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/user_input_keyword_input2"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="21dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="키워드 입력"
+                android:inputType="text"
+                android:textColorHint="#C1C1C1"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_input_keyword_input1"
+                tools:ignore="Autofill,HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+            <EditText
+                android:id="@+id/user_input_keyword_input3"
+                android:layout_width="280dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="19dp"
+                android:background="@null"
+                android:ems="10"
+                android:hint="키워드 입력"
+                android:inputType="text"
+                android:textColorHint="#C1C1C1"
+                android:textSize="15dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_input_keyword_input1_bg"
+                tools:ignore="Autofill,HardcodedText,MissingConstraints,SpUsage,TextSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/user_input_suggestionkey"
+                android:layout_width="360dp"
+                android:layout_height="800dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView12"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/user_input_suggestionkey"
+                tools:ignore="ContentDescription,VisualLintBounds"
+                tools:visibility="invisible" />
+            //fashion
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="800dp"
+                android:fontFamily="@font/surround"
+                android:text="오늘 입었던 옷을\n기록해주세요"
+                android:textAlignment="center"
+                android:textColor="@color/text_75A3E9_FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textView12"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/user_input_fashion_3"
+                android:layout_width="287dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textView13"
+                app:srcCompat="@drawable/user_input_fashion_3"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fashion"
+                android:layout_width="360dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="@+id/user_input_fashion_3"
+                app:layout_constraintStart_toStartOf="@+id/user_input_fashion_3"
+                app:layout_constraintTop_toTopOf="@+id/user_input_fashion_3">
+
+                <ImageView
+                    android:id="@+id/input_outer"
+                    android:layout_width="270dp"
+                    android:layout_height="270dp"
+                    android:layout_marginStart="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/input_top"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="40dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/intput_pants"
+                    android:layout_width="287dp"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="155dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,ImageContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/input_shoes"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="300dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <android.widget.Button
+                android:id="@+id/user_input_fashion_button_1"
+                android:layout_width="71dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="38dp"
+                android:background="@drawable/user_input_fashion_button_1"
+                app:layout_constraintBottom_toTopOf="@+id/user_input_fashion_4"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <android.widget.Button
+                android:id="@+id/user_input_fashion_button_2"
+                android:layout_width="71dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="109dp"
+                android:background="@drawable/user_input_fashion_button_2"
+                app:layout_constraintBottom_toTopOf="@+id/user_input_fashion_4"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+
+
+            <android.widget.Button
+                android:id="@+id/user_input_fashion_button_3"
+                android:layout_width="71dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="180dp"
+                android:background="@drawable/user_input_fashion_button_3"
+                app:layout_constraintBottom_toTopOf="@+id/user_input_fashion_4"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <android.widget.Button
+                android:id="@+id/user_input_fashion_button_4"
+                android:layout_width="71dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="197dp"
+                android:layout_marginEnd="38dp"
+                android:background="@drawable/user_input_fashion_button_4"
+                app:layout_constraintBottom_toTopOf="@+id/user_input_fashion_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageView
+                android:id="@+id/user_input_fashion_4"
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_input_fashion_3"
+                app:srcCompat="@drawable/user_input_fashion_4"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+            <HorizontalScrollView
+                android:id="@+id/outer"
+                android:layout_width="284dp"
+                android:layout_height="90dp"
+                android:scrollbars="none"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/user_input_fashion_4"
+                app:layout_constraintTop_toTopOf="@+id/user_input_fashion_4"
+                tools:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/none_2_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/padding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/padding_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/coat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/coat_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/jumper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/jumper_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/zipup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/zipup_foreground"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/cardigon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/cardigon_foreground" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/top"
+                android:layout_width="284dp"
+                android:layout_height="90dp"
+                android:scrollbars="none"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/user_input_fashion_4"
+                app:layout_constraintTop_toTopOf="@+id/user_input_fashion_4"
+                tools:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/hood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/hood_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/mantoman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/mantoman_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/knit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/knit_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/tshirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/tshirts_foreground"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/pants"
+                android:layout_width="284dp"
+                android:layout_height="90dp"
+                android:scrollbars="none"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/user_input_fashion_4"
+                app:layout_constraintTop_toTopOf="@+id/user_input_fashion_4"
+                tools:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/longskirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/longskirt_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/shortskirt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/shortskirt_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/shortpants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/shortpants_training_foreground"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/shortpants2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/shortpants_blue_foreground"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/slacks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/longpants_slacks_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/longpants1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/longpants_training_foreground" />
+
+                    <android.widget.Button
+                        android:id="@+id/longpants2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/longpants_blue_foreground" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/shoes"
+                android:layout_width="284dp"
+                android:layout_height="90dp"
+                android:scrollbars="none"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="@+id/user_input_fashion_4"
+                app:layout_constraintTop_toTopOf="@+id/user_input_fashion_4"
+                tools:visibility="invisible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.widget.Button
+                        android:id="@+id/sneakers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/sneakers_foreground"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <android.widget.Button
+                        android:id="@+id/sandals"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@mipmap/sandles_foreground"
+                        tools:ignore="InefficientWeight" />
+
+                    <android.widget.Button
+                        android:id="@+id/boots"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/boots_foreground"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <android.widget.Button
+                android:id="@+id/user_input_fashion_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:background="@drawable/user_input_fashion_button_5_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_input_fashion_4"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,VisualLintBounds" />
+
+            <EditText
+                android:id="@+id/temperature"
+                android:digits="0123456789-"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="68dp"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                app:guidelineUseRtl="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/minTempTextView"
+                tools:ignore="Autofill,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="75dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/temperature"
+                app:layout_constraintStart_toStartOf="@+id/temperature"
+                app:srcCompat="@drawable/temp_icon"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/common_menubar"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton6"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton7"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/common_menubar_button5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
